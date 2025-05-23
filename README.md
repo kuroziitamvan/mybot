@@ -3,10 +3,10 @@
 apt update && apt upgrade -y
 ```
 ```
-git clone https://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@github.com/UbotPremium/mybot
+git clone https://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@github.com/SenxXtraz/ubot
 ```
 ```
-cd mybot && screen -S mybot
+cd ubot && screen -S ubot
 ```
 ```
 apt install ffmpeg -y
@@ -18,7 +18,7 @@ bash installnode.sh
 apt install python3.10-venv
 ```
 ```
-python3 -m venv mybot && source mybot/bin/activate
+python3 -m venv ubot && source ubot/bin/activate
 ```
 ```
 pip3 install -r requirements.txt
@@ -27,22 +27,7 @@ pip3 install -r requirements.txt
 cp sample.env .env && nano .env
 ```
 ```
-screen -S mybot
-```
-```
-python3 -m PyroUbot
-```
-```
----------- Menghidupan jika ubot mati -------------
-```
-```
-cd mybot && screen -S mybot
-```
-```
-python3 -m venv mybot && source mybot/bin/activate
-```
-```
-screen -S mybot
+screen -S ubot
 ```
 ```
 python3 -m PyroUbot
