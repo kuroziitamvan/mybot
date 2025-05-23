@@ -1,33 +1,33 @@
-## Userbot
+
 ```
 apt update && apt upgrade -y
 ```
 ```
-git clone https://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@github.com/SenxXtraz/ubot
+git clone https://TOKEN GITHUB@github.com/NAma github/Nama-repo
 ```
 ```
-cd ubot && screen -S ubot
+cd nama-repo && screen -S nama-repo
 ```
 ```
-apt install ffmpeg -y
+bash installnode.sh && apt install python3.10-venv
 ```
 ```
-bash installnode.sh
-```
-```
-apt install python3.10-venv
-```
-```
-python3 -m venv ubot && source ubot/bin/activate
+python3 -m vvenvnama-repo && source nama-repo/bin/activate
 ```
 ```
 pip3 install -r requirements.txt
 ```
 ```
-cp sample.env .env && nano .env
+pip install geopy && pip3 install geopy
 ```
 ```
-screen -S ubot
+sudo apt update && sudo apt install ffmpeg -y
+```
+```
+pip3 install -U yt-dlp
+```
+```
+cp sample.env .env 
 ```
 ```
 python3 -m PyroUbot
