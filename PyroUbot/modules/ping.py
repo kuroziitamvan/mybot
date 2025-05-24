@@ -34,16 +34,14 @@ async def _(client, message):
 <blockquote>{pong} {pantek} : {str(delta_ping_formatted).replace('.', ',')} ms
 {tion} {ngentod} : <code>{client.me.mention}</code>
 {yubot} {kontol} : <code>{bot.me.mention}</code></blockquote>
-
-<blockquote><b>𝚇𝚃𝚁𝙴𝙼𝙴𝙱𝙾𝚃 𝙱𝚈 𝙱𝙻𝙾𝙾𝙳𝚂𝙺𝙸𝙻</b></blockquote>"""
+"""
         await message.reply(_ping)
     else:
         _ping = f"""
 <blockquote>{pantek} : {str(delta_ping_formatted).replace('.', ',')} ms
 {ngentod} : <code>{client.me.mention}</code>
 {kontol} : <code>{bot.me.mention}</code></blockquote>
-
-<blockquote><b>𝚇𝚃𝚁𝙴𝙼𝙴𝙱𝙾𝚃 𝙱𝚈 𝙱𝙻𝙾𝙾𝙳𝚂𝙺𝙸𝙻</b></blockquote>"""
+"""
         await message.reply(_ping)
 
 @PY.INDRI("1ping")
@@ -70,11 +68,9 @@ async def _(client, message):
 <blockquote>{pong}𝙿𝙾𝙽𝙶 : {str(delta_ping_formatted).replace('.', ',')} ms
 {tion}𝙿𝙴𝙽𝙶𝙶𝚄𝙽𝙰 : {client.me.mention}
 {yubot}𝚄𝙱𝙾𝚃 : {bot.me.mention}</blockquote>
-
-<blockquote><b>𝚇𝚃𝚁𝙴𝙼𝙴𝙱𝙾𝚃 𝙱𝚈 𝙱𝙻𝙾𝙾𝙳𝚂𝙺𝙸𝙻</b></blockquote>
     """
         await message.reply(_ping)
     else:
-        await message.reply(f"<blockquote>pong : {str(delta_ping_formatted).replace('.', ',')} ms</blockquote>\n\n<blockquote><b>𝚇𝚃𝚁𝙴𝙼𝙴𝙱𝙾𝚃 𝙱𝚈 𝙱𝙻𝙾𝙾𝙳𝚂𝙺𝙸𝙻</b></blockquote>")
+        await message.reply(f"<blockquote>pong : {str(delta_ping_formatted).replace('.', ',')} ms</blockquote>\n\n<blockquote><b>kipop userbot</b></blockquote>")
 
 
