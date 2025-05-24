@@ -5,34 +5,34 @@ from PyroUbot import *
 class EMO:
     async def PING(client):
         emot_1 = await get_vars(client.me.id, "EMOJI_PING")
-        emot_ping = emot_1 if emot_1 else "4943170357382087999"
-        _pong = f"<emoji id={emot_ping}>⚡️</emoji>"
+        emot_ping = emot_1 if emot_1 else "5454389267969105793"
+        _pong = f"<emoji id={emot_ping}>🏓</emoji>"
         return _pong
 
     async def MENTION(client):
         emot_2 = await get_vars(client.me.id, "EMOJI_MENTION")
-        emot_tion = emot_2 if emot_2 else "5217822164362739968"
-        _men = f"<emoji id={emot_tion}>👕</emoji>"
+        emot_tion = emot_2 if emot_2 else "5456151243942552025"
+        _men = f"<emoji id={emot_tion}>🪀</emoji>"
         return _men
 
     async def UBOT(client):
         emot_3 = await get_vars(client.me.id, "EMOJI_USERBOT")
-        emot_xbot = emot_3 if emot_3 else "4943012379895005986"
-        _ubt = f"<emoji id={emot_xbot}>😉</emoji>"
+        emot_xbot = emot_3 if emot_3 else "5235717240090815819"
+        _ubt = f"<emoji id={emot_xbot}>📚</emoji>"
         return _ubt
     
     async def PROSES(client):
         emot_4 = await get_vars(client.me.id, "EMOJI_PROSES")
-        emot_prs = emot_4 if emot_4 else "5789858554890425372"
+        emot_prs = emot_4 if emot_4 else "5803403369913520877"
         if client.me.is_premium:
-            _prses = f"<emoji id={emot_prs}>😇</emoji>"
+            _prses = f"<emoji id={emot_prs}>💫</emoji>"
         else:
             _prses = ""
         return _prses
     
     async def BERHASIL(client):
         emot_5 = await get_vars(client.me.id, "EMOJI_BERHASIL")
-        emot_brhsl = emot_5 if emot_5 else "5206607081334906820"
+        emot_brhsl = emot_5 if emot_5 else "5249483078425923131"
         if client.me.is_premium:
             _berhasil = f"<emoji id={emot_brhsl}>✔️</emoji>"
         else:
@@ -41,7 +41,7 @@ class EMO:
 
     async def GAGAL(client):
         emot_6 = await get_vars(client.me.id, "EMOJI_GAGAL")
-        emot_ggl = emot_6 if emot_6 else "5210952531676504517"
+        emot_ggl = emot_6 if emot_6 else "5260483378729208732"
         if client.me.is_premium:
             _gagal = f"<emoji id={emot_ggl}>❌</emoji>"
         else:
@@ -95,7 +95,7 @@ class EMO:
 
     async def AEFKA(client):
         emot = await get_vars(client.me.id, "EMOJI_AFKA")
-        emot_ji = emot if emot else "5805504652598316759"
+        emot_ji = emot if emot else "5190694523855977431"
         if client.me.is_premium:
             mmk = f"<emoji id={emot_ji}>🚀</emoji> "
         else:
