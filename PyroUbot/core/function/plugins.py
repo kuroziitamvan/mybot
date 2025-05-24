@@ -4,7 +4,7 @@ from PyroUbot import bot, ubot
 from PyroUbot.core.helpers import PY
 from PyroUbot.modules import loadModule
 from PyroUbot.core.database import *
-from PyroUbot.config import OWNER_ID
+from PyroUbot.config import LOGS_MAKER_UBOT
 from platform import python_version
 from pyrogram import __version__
 HELP_COMMANDS = {}
@@ -18,25 +18,25 @@ async def loadPlugins():
         if module_name:
             HELP_COMMANDS[module_name] = imported_module
     print(f"[🤖 ᴜsᴇʀʙᴏᴛ 🤖] [💠 TELAH BERHASIL DIAKTIFKAN! 💠]")
-    await bot.send_message(OWNER_ID, 
+    await bot.send_message(
+        LOGS_MAKER_UBOT, 
        f"""                    
-<b>᪣ ᴜsᴇʀʙᴏᴛ ʙᴇʀʜᴀsɪʟ ᴅɪᴀᴋᴛɪꜰᴋᴀɴ</b>
+<b>🤖 ᴜsᴇʀʙᴏᴛ ʙᴇʀʜᴀsɪʟ ᴅɪᴀᴋᴛɪꜰᴋᴀɴ</b>
 
-<b>⟣ ᴍᴏᴅᴜʟᴇs: {len(HELP_COMMANDS)}</b>
-<b>⟣ ᴘʏᴛʜᴏɴ: {python_version()}</b>
-<b>⟣ ᴘʏʀᴏɢʀᴀᴍ: {__version__}</b>
-
-<b>⟣ ᴜsᴇʀʙᴏᴛ: {len(ubot._ubot)}</b>
+<b>📁Userbot: {len(ubot._ubot)}</b>
+<b>🤖ᴍᴏᴅᴜʟᴇs: {len(HELP_COMMANDS)}</b>
+<b>📘ᴘʏᴛʜᴏɴ: {python_version()}</b>
+<b>📙ᴘʏʀᴏɢʀᴀᴍ: {__version__}</b>`
 """,
    reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("⳹  ʟɪꜱᴛ ᴜꜱᴇʀʙᴏᴛ ⳼", callback_data="cek_ubot"),
+                    InlineKeyboardButton(" 𝗟𝗜𝗦𝗧 𝗨𝗦𝗘𝗥𝗕𝗢𝗧", callback_data="cek_ubot"),
                 ],
             ]
         ),
                           )
-    
+
 @PY.CALLBACK("0_cls")
 async def _(client, callback_query):
     await callback_query.message.delete()
