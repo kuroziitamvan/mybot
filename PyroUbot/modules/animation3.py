@@ -2,16 +2,25 @@ import asyncio
 from time import sleep
 from PyroUbot import *
 
-__MODULE__ = "ᴀɴɪᴍᴀsɪ 3"
+__MODULE__ = "animasi 3"
 __HELP__ = """
- <b>⦪ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴀɴɪᴍᴀsɪ 3 ⦫</b>
+ <blockquote><b>Bantuan Untuk Animasi 3</b>
 
-<blockquote><b>⎆ Perintah :
-ᚗ <code>{0}tank</code>
-ᚗ <code>{0}babi</code>
-ᚗ <code>{0}anjing</code>
-ᚗ <code>{0}bernyanyi</code>
-ᚗ <code>{0}santet</code></b></blockquote>
+• <b>Perintah</b> : <code>{0}tank</code>
+• <b>Penjelasan : gatau gabut doang.</b>
+
+• <b>Perintah</b> : <code>{0}babi</code>
+• <b>Penjelasan : gatau gabut doang.</b>
+
+• <b>Perintah</b> : <code>{0}anjing</code>
+• <b>Penjelasan : gatau gabut doang.</b>
+
+• <b>Perintah</b> : <code>{0}bernyanyi</code>
+• <b>Penjelasan : gatau gabut doang.</b>
+
+• <b>Perintah</b> : <code>{0}santet</code>
+• <b>Penjelasan : gatau gabut doang.</b></blockquote>
+
 """
 
 @PY.UBOT("tank")

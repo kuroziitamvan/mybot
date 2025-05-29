@@ -8,13 +8,13 @@ from PyroUbot import *
 
 __MODULE__ = "ɢᴇᴛ ᴘᴘ"
 __HELP__ = """
-<b>⦪ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ɢᴇᴛ ᴘᴘ ⦫</b>
+<b>✮ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ɢᴇᴛ ᴘᴘ ✮</b>
 
-<blockquote><b>⎆ ᴘᴇʀɪɴᴛᴀʜ :
-ᚗ <code>{0}getpp</code> replychat
+<blockquote><b>ᴘᴇʀɪɴᴛᴀʜ :
+<code>{0}getpp</code> replychat
 
-⌭ ᴘᴇɴᴊᴇʟᴀsᴀɴ:
-ᚗ Untuk mendapatakan foto profil user</blockquote>
+ᴘᴇɴᴊᴇʟᴀsᴀɴ:
+Untuk mendapatakan foto profil user</blockquote>
 """
 
 @PY.UBOT("getpp|getprofile")
@@ -31,7 +31,7 @@ async def get_profile_pic(client, message):
         target = message.chat.id
         
     if not target:
-        return await message.reply_text("**__Gunakan `/getpp @username`, reply user, atau kirim `.getpp` di grup/channel untuk ambil PP.__**")
+        return await message.reply_text("<blockquote><b>**__Gunakan `/getpp @username`, reply user, atau kirim `.getpp` di grup/channel untuk ambil PP.__**</b></blockquote>")
 
     try:
         async for photo in client.get_chat_photos(target, limit=1):  # Ambil 1 foto terbaru

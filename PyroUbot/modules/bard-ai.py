@@ -5,13 +5,12 @@ from pyrogram.enums import ChatAction, ParseMode
 from pyrogram import filters
 from pyrogram.types import Message
 
-__MODULE__ = "ʙᴀʀᴅ ᴀɪ"
+__MODULE__ = "Bard Ai"
 __HELP__ = """
-<b>⦪ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ʙᴀʀᴅ ᴀɪ ⦫</b>
+<blockquote><b>Bantuan Untuk bard-ai
 
-<blockquote><b>⎆ perintah :
-ᚗ <code>{0}bard</code>
-⊷ dapat menulis cerita, puisi, skrip, kode komputer, musik, email, surat, dll</b></blockquote>
+perintah : <code>{0}bard</code>
+    dapat menulis cerita, puisi, skrip, kode komputer, musik, email, surat, dll</b></blockquote>
 """
 
 
@@ -28,7 +27,7 @@ async def chat_gpt(client, message):
         else:
             prs = await message.reply_text(f"<emoji id=5319230516929502602>🔍</emoji>proccesing....")
             a = message.text.split(' ', 1)[1]
-            response = requests.get(f'https://api.botcahx.eu.org/api/search/bard-ai?text={a}&apikey=@moire_mor')
+            response = requests.get(f'https://api.betabotz.eu.org/api/search/bard-ai?text={a}&apikey=Btz-bxwol')
 
             try:
                 if "message" in response.json():

@@ -4,13 +4,13 @@ from PyroUbot import *
 
 __MODULE__ = "ᴄᴀᴘᴄᴜᴛ ᴅʟ"
 __HELP__ = """
-<b>⦪ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴄᴀᴘᴄᴜᴛ ᴅʟ ⦫</b>
+<b>✮ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴄᴀᴘᴄᴜᴛ ᴅʟ ✮</b>
 <blockquote>
-⎆ perintah :
-ᚗ <code>{0}capdl</code> Link
+perintah :
+<code>{0}capdl</code> Link
 
-⎆ ᴘᴇɴᴊᴇʟᴀsᴀɴ:
-⊶ Download template capcut.
+ᴘᴇɴᴊᴇʟᴀsᴀɴ:
+Download template capcut.
 </blockquote>
 """
 
@@ -24,7 +24,7 @@ async def capcut_download(client, message):
     url = message.command[1]
     processing_msg = await message.reply_text("🔄 Memproses permintaan, harap tunggu...")
     
-    response = requests.get(f"https://api.botcahx.eu.org/api/download/capcut?url={url}&apikey=@moire_mor")
+    response = requests.get(f"https://api.botcahx.eu.org/api/download/capcut?url={url}&apikey=Biyy")
     data = response.json()
     
     if not data.get("status"):

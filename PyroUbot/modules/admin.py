@@ -14,33 +14,21 @@ from PyroUbot import *
 
 __MODULE__ = "ᴀᴅᴍɪɴ"
 __HELP__ = """
-<b>⦪ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴀᴅᴍɪɴ ⦫<b>
+<blockquote><b>Bantuan Untuk Admin
 
-<blockquote><b>⎆ perintah : 
-ᚗ <code>{0}kick</code>
-ᚗ <code>{0}ban</code> 
-ᚗ <code>{0}mute</code> 
-ᚗ <code>{0}etmin</code> 
-ᚗ <code>{0}ceo</code> 
-ᚗ <code>{0}demote</code>
-ᚗ <code>{0}unmute</code> 
-ᚗ <code>{0}unban</code></b></blockquote>
+perintah : <code>{0}kick</code> |<code>{0}ban</code> |<code>{0}mute</code> |<code>{0}etmin</code> |<code>{0}ceo</code> |<code>{0}demote</code>
+    <code>{0}unmute</code> |<code>{0}unban</code>
 
-<blockquote><b>⎆ perintah :
-ᚗ <code>{0}lock</code> 
-ᚗ <code>{0}unlock</code> 
-ᚗ <code>{0}locks</code>
-ᚗ wamengunci/membuka dan list izin group</b></blockquote>
+perintah : <code>{0}zombies</code> [in group]
+    mengeluarkan akun terhapus dari group
 
-<blockquote><b>⎆ example:
-ᚗ <code>{0}lock msg</code> 
-ᚗ <code>{0}lock media</code> 
-ᚗ <code>{0}lock pin</code>
-ᚗ <code>{0}lock polls</code> 
-ᚗ <code>{0}lock info</code> 
-ᚗ <code>{0}lock invite</code>
-ᚗ <code>{0}lock webprev</code> 
-ᚗ <code>{0}lock stickers</code></b></blockquote>
+perintah : <code>{0}lock</code> | <code>{0}unlock</code> | <code>{0}locks</code>
+    mengunci/membuka dan list izin group
+
+example:
+    |<code>{0}lock msg</code> |<code>{0}lock media</code> |<code>{0}lock pin</code>
+    |<code>{0}lock polls</code> |<code>{0}lock info</code> |<code>{0}lock invite</code>
+    |<code>{0}lock webprev</code> |<code>{0}lock stickers</code></b></blockquote>
 """
 
 
@@ -212,7 +200,7 @@ async def _(client, message):
 <b>{tion}ᴀᴅᴍɪɴ: {message.from_user.mention}</b>
 <b>{ktrng}ᴀʟᴀꜱᴀɴ: {reason}</b></blockquote>
 
-<blockquote><b>ᣃ࿈ ᴜsᴇʀʙᴏᴛ ᴘʀᴇᴍɪᴜᴍ ࿈ᣄ</b></blockquote>
+<blockquote><b>USERBOT 5K/BULAN BY @myuserbotzgnz_Bot</b></blockquote>
             """
         try:
             await message.chat.ban_member(user_id)
@@ -236,11 +224,11 @@ async def _(client, message):
         except Exception as error:
             await message.reply(error)
         msg_ban = f"""
-<blockquote><b>{bcs}⎆ ᴡᴀʀɴɪɴɢ: {mention}<b>
-<b>{tion}⎆ ᴀᴅᴍɪɴ: {message.from_user.mention}</b>
-<b>{ktrng}⎆ ᴀʟᴀꜱᴀɴ: {reason}</b></blockquote>
+<blockquote><b>{bcs}ᴡᴀʀɴɪɴɢ: {mention}<b>
+<b>{tion}ᴀᴅᴍɪɴ: {message.from_user.mention}</b>
+<b>{ktrng}ᴀʟᴀꜱᴀɴ: {reason}</b></blockquote>
 
-<blockquote><b>ᣃ࿈ ᴜsᴇʀʙᴏᴛ ᴘʀᴇᴍɪᴜᴍ ࿈ᣄ</b></blockquote>
+<blockquote><b>USERBOT 5K/BULAN BY @myuserbotzgnz_Bot</b></blockquote>
             """
         try:
             await message.chat.ban_member(user_id)
@@ -262,11 +250,11 @@ async def _(client, message):
         except Exception as error:
             await message.reply(error)
         msg_mute = f"""
-<blockquote><b>{bcs}⎆ ᴡᴀʀɴɪɴɢ: {mention}</b>
-<b>{tion}⎆ ᴀᴅᴍɪɴ: {message.from_user.mention}</b>
-<b>{ktrng}⎆ ᴀʟᴀꜱᴀɴ: {reason}</blockquote></b>\n<blockquote><b>⎆ ᴋᴇᴛ: ᴍᴀᴍᴘᴜs ᴅɪ ᴍᴜᴛᴇ ᴇᴛᴍɪɴ</blockquote></b>
+<blockquote><b>{bcs}ᴡᴀʀɴɪɴɢ: {mention}</b>
+<b>{tion}ᴀᴅᴍɪɴ: {message.from_user.mention}</b>
+<b>{ktrng}ᴀʟᴀꜱᴀɴ: {reason}</blockquote></b>\n<blockquote><b>ᴋᴇᴛ: ᴍᴀᴍᴘᴜs ᴅɪ ᴍᴜᴛᴇ ᴇᴛᴍɪɴ</blockquote></b>
 
-<blockquote><b>ᣃ࿈ ᴜsᴇʀʙᴏᴛ ᴘʀᴇᴍɪᴜᴍ ࿈ᣄ</b></blockquote>
+<blockquote><b>USERBOT 5K/BULAN BY @myuserbotzgnz_Bot</b></blockquote>
             """
         try:
             await message.chat.restrict_member(user_id, ChatPermissions())

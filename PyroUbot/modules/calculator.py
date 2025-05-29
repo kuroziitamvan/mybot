@@ -14,7 +14,6 @@ Fitur ini bisa digunakan oleh siapa saja.</blockquote></b>
 """
 
 @PY.UBOT("calc")
-@PY.TOP_CMD
 async def _(client, message):
     args = message.text.split(" ", 1)
     if len(args) < 2:

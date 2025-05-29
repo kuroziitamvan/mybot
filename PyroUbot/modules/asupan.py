@@ -4,17 +4,17 @@ from PyroUbot import *
 
 __MODULE__ = "ᴀꜱᴜᴘᴀɴ"
 __HELP__ = """
-<b>⦪ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴀsᴜᴘᴀɴ ⦫</b>
+<blockquote><b>Bantuan Untuk Asupan
 
-<blockquote><b>⎆ perintah :
-ᚗ <code>{0}asupan</code>
-⊷ mengirim video asupan random 
+perintah : <code>{0}asupan</code>
+    mengirim video asupan random 
 
-ᚗ <code>{0}cewek</code>
-⊷ mengirim photo cewe random
+perintah : <code>{0}cewek</code>
+    mengirim photo cewe random
 
-ᚗ <code>{0}cowok</code>
-⊷ mengirim photo cowo random</b></blockquote>  
+perintah : <code>{0}cowok</code>
+    mengirim photo cowo random</b></blockquote>
+    
 """
 
 
@@ -52,3 +52,22 @@ async def photo_cewek(client, message):
         await y.delete()
     except Exception as error:
         await y.edit(error)
+        
+
+@PY.UBOT("cowok")
+@PY.TOP_CMD
+async def photo_cewek(client, message):
+    prs = await EMO.PROSES(client)
+    y = await message.reply_text(f"{prs}mencari cowok...")
+    try:
+        ayang2nya = []
+        async for ayang2 in client.search_messages(
+            "@ayang2Saiki", filter=MessagesFilter.PHOTO
+        ):
+            ayang2nya.append(ayang2)
+        photo = random.choice(ayang2nya)
+        await photo.copy(message.chat.id, reply_to_message_id=message.id)
+        await y.delete()
+    except Exception as error:
+        await y.edit(error)
+       

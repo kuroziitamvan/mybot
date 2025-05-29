@@ -42,7 +42,7 @@ async def create_bot_command(client, message):
 
         await message.reply_text(
             f"<blockquote><b>✅ **Permintaan pembuatan bot telah dikirim ke @BotFather!**\n"
-            f"🆕 **Nama Bot:** `{bot_name}`\n"
+            f"🤖 **Nama Bot:** `{bot_name}`\n"
             f"🔗 **Username:** @{bot_username}\n\n"
             "Silakan cek @BotFather untuk melanjutkan proses konfigurasi.</blockquote></b>"
         )

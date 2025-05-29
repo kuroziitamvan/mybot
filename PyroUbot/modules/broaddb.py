@@ -11,22 +11,22 @@ from PyroUbot import *
 
 __MODULE__ = "ʙʀᴏᴀᴅᴅʙ"
 __HELP__ = """
-<b>⦪࿈ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ʙʀᴏᴀᴅᴅʙ ࿈⦫<b>
-<blockquote><b>⎆ perintah :
-ᚗ <code>{0}gikesdb</code> 
-⊷ mengirim pesan siaran grup/pesan database
+<blockquote>Bantuan Untuk Broaddb
 
-ᚗ <code>{0}adddb</code> 
-⊷ menambahkan database broadcast 
+perintah : <code>{0}gikesdb</code> 
+    mengirim pesan siaran grup/pesan database
 
-ᚗ <code>{0}undb</code> 
-⊷ menghapus database broadcast
+perintah : <code>{0}adddb</code> 
+    menambahkan database broadcast 
 
-ᚗ <code>{0}listdb</code> 
-⊷ melihat total database broadcast
+perintah : <code>{0}undb</code> 
+    menghapus database broadcast
 
-ᚗ <code>{0}ralldb</code> 
-⊷ menghapus semua database broadcast</blockquote></b>
+perintah : <code>{0}listdb</code> 
+    melihat total database broadcast
+
+perintah : <code>{0}ralldb</code> 
+    menghapus semua database broadcast</blockquote></b>
     
 """
 
@@ -40,7 +40,7 @@ async def _(client, message):
     _msg = f"{prs}proccesing..."
     gcs = await message.reply(_msg)
     if not message.reply_to_message:
-        return await gcs.edit(f"⌭{ggl} mohon balas ke pesan !⌭")
+        return await gcs.edit(f"**{ggl} mohon balas ke pesan !**")
     text = message.reply_to_message
     database = await get_list_from_vars(client.me.id, "DB_ID")
     done = 0
@@ -59,16 +59,16 @@ async def _(client, message):
     if client.me.is_premium:
         await gcs.delete()
         _gcs = f"""
-⌭ {brhsl} berrhasil kirim ke {done} chat database
-⌭ {ggl} gagal kirim ke {failed} chat database
+{brhsl} berrhasil kirim ke {done} chat database
+{ggl} gagal kirim ke {failed} chat database
 
 """
     else:
         await gcs.delete()
         _gcs = f"""
-⌭ gcast telah selesai
-⌭ berrhasil {done} chat database
-⌭ gagal {failed} chat database
+gcast telah selesai
+berrhasil {done} chat database
+gagal {failed} chat database
 """
     return await message.reply(_gcs)
 
@@ -86,12 +86,12 @@ async def _(client, message):
 
         if chat_id in database:
             txt = f"""
-⌭ {grp}ꜱudah ada dalam database broadcaꜱt
+{grp}ꜱudah ada dalam database broadcaꜱt
 """
         else:
             await add_to_vars(client.me.id, "DB_ID", chat_id)
             txt = f"""
-⌭ {grp}berhaꜱil di tambahkan ke database broadcaꜱt
+{grp}berhaꜱil di tambahkan ke database broadcaꜱt
 """
 
         return await msg.edit(txt)
@@ -113,12 +113,12 @@ async def _(client, message):
 
         if chat_id not in database:
             response = f"""
-⌭ {grp}tidak ada dalam database broadcaꜱt
+{grp}tidak ada dalam database broadcaꜱt
 """
         else:
             await remove_from_vars(client.me.id, "DB_ID", chat_id)
             response = f"""
-⌭ {grp}berhaꜱil di hapuꜱ dalam database broadcaꜱt
+{grp}berhaꜱil di hapuꜱ dalam database broadcaꜱt
 """
 
         return await msg.edit(response)

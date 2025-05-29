@@ -6,11 +6,11 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 __MODULE__ = "ᴅᴏxxɪɴɢ"
 __HELP__ = """
-<b>⦪ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴅᴏxxɪɴɢ ⦫</b>
+<b>✮ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴅᴏxxɪɴɢ ✮</b>
 
-<blockquote>⎆ perintah :
-ᚗ <code>{0}dox</code> nama/nik/nomor telpon
-⊶ mencari data sesuai query.
+<blockquote>perintah :
+ <code>{0}dox</code> nama/nik/nomor telpon
+ mencari data sesuai query.
 </blockquote>
 """
 

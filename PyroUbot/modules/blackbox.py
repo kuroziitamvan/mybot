@@ -5,13 +5,12 @@ from pyrogram.enums import ChatAction, ParseMode
 from pyrogram import filters
 from pyrogram.types import Message
 
-__MODULE__ = "ʙʟᴀᴄᴋʙᴏx ᴀɪ"
+__MODULE__ = "Blackbox"
 __HELP__ = """
-<b>⦪ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ʙʟᴀᴄᴋʙᴏx ᴀɪ ⦫</b>
+<blockquote><b>Bantuan Untuk Blackbox
 
-<blockquote><b>⎆ perintah :
-ᚗ <code>{0}blackbox</code>
-⊷ dapat membantu Anda dengan berbagai konsep pemrograman</b></blockquote>
+perintah : <code>{0}blackbox</code>
+    dapat membantu Anda dengan berbagai konsep pemrograman</b></blockquote>
 """
 
 
@@ -28,7 +27,7 @@ async def chat_gpt(client, message):
         else:
             prs = await message.reply_text(f"<emoji id=6226405134004389590>🔍</emoji>proccesing....")
             a = message.text.split(' ', 1)[1]
-            response = requests.get(f'https://api.botcahx.eu.org/api/search/blackbox-chat?text={a}&apikey=@moire_mor')
+            response = requests.get(f'https://api.botcahx.eu.org/api/search/blackbox-chat?text={a}&apikey=Biyy')
 
             try:
                 if "message" in response.json():

@@ -5,11 +5,10 @@ from PyroUbot import *
 
 __MODULE__ = "ʙɪɴɢ ɪᴍɢ"
 __HELP__ = """
-<b>⦪ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ʙɪɴɢ-ɪᴍɢ⦫</b>
+<blockquote><b>Bantuan Untuk Bing-image
 
-<blockquote><b>⎆ Perintah :
-ᚗ <code>{0}pic</code> [ǫᴜᴇʀʏ]
-⊷ Untuk Mencari Photo Random Dari Google</b></blockquote>
+Perintah : <code>{0}pic</code> [ǫᴜᴇʀʏ]
+    Untuk Mencari Photo Random Dari Google</b></blockquote>
 """
 
 

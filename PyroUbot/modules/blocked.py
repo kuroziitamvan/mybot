@@ -3,14 +3,13 @@ from pyrogram.raw.functions.contacts import GetBlocked
 
 __MODULE__ = "ʙʟᴏᴄᴋᴇᴅ"
 __HELP__ = """
-<b>⦪ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ʙʟᴏᴄᴋᴇᴅ ⦫</b>
+<blockquote><b>Bantuan Untuk Blocked
 
-<blockquote>⎆ perintah :
-ᚗ <code>{0}unblockall</code>
-⊷ meng unblock semua user di daftar contact
+perintah : <code>{0}unblockall</code>
+    meng unblock semua user di daftar contact
 
-ᚗ <code>{0}getblock</code>
-⊷ melihat jumlah yang di blockir di contact</b></blockquote>
+perintah : <code>{0}getblock</code>
+    melihat jumlah yang di blockir di contact</b></blockquote>
 """
 
 @PY.UBOT("unblockall")

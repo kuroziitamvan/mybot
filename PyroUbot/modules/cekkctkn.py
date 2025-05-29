@@ -18,7 +18,7 @@ KHODAM_LIST = [
     "90% (CANTIKNYA PAS)😎", "100% (CANTIK+TOBRUT)🤯", "4% (IRENG)🤢", "10% (IRENG+TEPOS)😖", "1000% (CANTIK+TOBRUT+MANIS)😱"
 ]
 
-@PY.UBOT("cekcantik")
+@PY.UBOT("cekkctkn")
 @PY.TOP_CMD
 async def cek_khodam(client, message):
     args = message.text.split(maxsplit=1)

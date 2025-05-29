@@ -31,28 +31,28 @@ NOBLE = [
 
 __MODULE__ = "ᴀɴɪᴍᴀꜱɪ"
 __HELP__ = """
-<b>⦪ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴀɴɪᴍᴀsɪ ⦫<b>
+<blockquote><b>Bantuan Untuk Animasi
 
-<blockquote><b>⎆ perintah :
-ᚗ <code>{0}dino</code>
-ᚗ <code>{0}awk</code>
-ᚗ <code>{0}loveyou</code>
-ᚗ <code>{0}ange</code>
-ᚗ <code>{0}hmm</code>
-ᚗ <code>{0}lipkol</code>
-ᚗ <code>{0}kntl</code>
-ᚗ <code>{0}ajg</code>
-ᚗ <code>{0}kocok</code>
-ᚗ <code>{0}heli</code>
-ᚗ <code>{0}y</code>
-ᚗ <code>{0}nakal</code>
-ᚗ <code>{0}tank</code>
-ᚗ <code>{0}nah</code>
-ᚗ <code>{0}tembak</code>
-ᚗ <code>{0}piss</code>
-ᚗ <code>{0}bundir</code>
-ᚗ <code<{0}bot</code>
-ᚗ <code>{0}sepongebob</code></b></blockquote>
+perintah :
+    <code>{0}dino</code>
+    <code>{0}awk</code>
+    <code>{0}loveyou</code>
+    <code>{0}ange</code>
+    <code>{0}hmm</code>
+    <code>{0}lipkol</code>
+    <code>{0}kntl</code>
+    <code>{0}ajg</code>
+    <code>{0}kocok</code>
+    <code>{0}heli</code>
+    <code>{0}y</code>
+    <code>{0}nakal</code>
+    <code>{0}tank</code>
+    <code>{0}nah</code>
+    <code>{0}tembak</code>
+    <code>{0}piss</code>
+    <code>{0}bundir</code>
+    <code<{0}bot</code>
+    <code>{0}sepongebob</code></b></blockquote>
 """
 
 
@@ -419,7 +419,3 @@ async def nahlove(client, message):
     typew = await message.reply("`\n(\\_/)`" "`\n(●_●)`" "`\n />💖 *Ini Buat Kamu`")
     await asyncio.sleep(2)
     await typew.edit("`\n(\\_/)`" "`\n(●_●)`" "`\n💖<\\  *Tapi Bo'ong`")
-
-
-
-

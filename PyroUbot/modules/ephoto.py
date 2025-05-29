@@ -5,29 +5,29 @@ import requests
 __MODULE__ = "ᴇᴘʜᴏᴛᴏ"
 __HELP__ = """**「 BANTUAN UNTUK MODULE EPHOTO 」**
 
-𖠇➛ **ᴘᴇʀɪɴᴛᴀʜ: .television (ᴛᴇxᴛ)**
-𖠇➛ **ᴘᴇɴᴊᴇʟᴀsᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴜᴀᴛ ᴛᴇxᴛ ᴛᴇʟᴇᴠɪsɪᴏɴ**
+<blockquote><b>✮➛ **ᴘᴇʀɪɴᴛᴀʜ: .television (ᴛᴇxᴛ)**
+✮➛ **ᴘᴇɴᴊᴇʟᴀsᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴜᴀᴛ ᴛᴇxᴛ ᴛᴇʟᴇᴠɪsɪᴏɴ**
 
-𖠇➛ **ᴘᴇʀɪɴᴛᴀʜ: .glasse (ᴛᴇxᴛ)**
-𖠇➛ **ᴘᴇɴᴊᴇʟᴀsᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴜᴀᴛ ᴛᴇxᴛ ɢʟᴀssᴇ**
+✮➛ **ᴘᴇʀɪɴᴛᴀʜ: .glasse (ᴛᴇxᴛ)**
+✮➛ **ᴘᴇɴᴊᴇʟᴀsᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴜᴀᴛ ᴛᴇxᴛ ɢʟᴀssᴇ**
 
-𖠇➛ **ᴘᴇʀɪɴᴛᴀʜ: .blackpink (ᴛᴇxᴛ)**
-𖠇➛ **ᴘᴇɴᴊᴇʟᴀsᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴜᴀᴛ ᴛᴇxᴛ ʙʟᴀᴄᴋᴘɪɴᴋ**
+✮➛ **ᴘᴇʀɪɴᴛᴀʜ: .blackpink (ᴛᴇxᴛ)**
+✮➛ **ᴘᴇɴᴊᴇʟᴀsᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴜᴀᴛ ᴛᴇxᴛ ʙʟᴀᴄᴋᴘɪɴᴋ**
 
-𖠇➛ **ᴘᴇʀɪɴᴛᴀʜ: .blackpink2 (ᴛᴇxᴛ)**
-𖠇➛ **ᴘᴇɴᴊᴇʟᴀsᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴜᴀᴛ ᴛᴇxᴛ ʙʟᴀᴄᴋᴘɪɴᴋ2**
+✮➛ **ᴘᴇʀɪɴᴛᴀʜ: .blackpink2 (ᴛᴇxᴛ)**
+✮➛ **ᴘᴇɴᴊᴇʟᴀsᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴜᴀᴛ ᴛᴇxᴛ ʙʟᴀᴄᴋᴘɪɴᴋ2**
 
-𖠇➛ **ᴘᴇʀɪɴᴛᴀʜ: .coverpubg (ᴛᴇxᴛ)**
-𖠇➛ **ᴘᴇɴᴊᴇʟᴀsᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴜᴀᴛ ᴍᴇᴍʙᴜᴀᴛ ᴛᴇxᴛ ʙʟᴀᴄᴋᴘɪɴᴋ2**
+✮➛ **ᴘᴇʀɪɴᴛᴀʜ: .coverpubg (ᴛᴇxᴛ)**
+✮➛ **ᴘᴇɴᴊᴇʟᴀsᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴜᴀᴛ ᴍᴇᴍʙᴜᴀᴛ ᴛᴇxᴛ ʙʟᴀᴄᴋᴘɪɴᴋ2**
 
-𖠇➛ **ᴘᴇʀɪɴᴛᴀʜ: .hororr (ᴛᴇxᴛ)**
-𖠇➛ **ᴘᴇɴᴊᴇʟᴀsᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴜᴀᴛ ᴛᴇxᴛ ʜᴏʀᴏʀʀʀ**"""
+✮➛ **ᴘᴇʀɪɴᴛᴀʜ: .hororr (ᴛᴇxᴛ)**
+✮➛ **ᴘᴇɴᴊᴇʟᴀsᴀɴ: ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴜᴀᴛ ᴛᴇxᴛ ʜᴏʀᴏʀʀʀ**</b></blockquote>"""
 
 def tweet(text):
     url = "https://api.botcahx.eu.org/api/ephoto/televisi"
     params = {
         "text": text,
-        "apikey": "VENOZY"
+        "apikey": "Biyy"
     }   
     try:
         response = requests.get(url, params=params)
@@ -44,7 +44,7 @@ def rob(text):
     url = "https://api.botcahx.eu.org/api/ephoto/coverpubg"
     params = {
         "text": text,
-        "apikey": "VENOZY"
+        "apikey": "Biyy"
     }   
     try:
         response = requests.get(url, params=params)
@@ -61,7 +61,7 @@ def robottt(text):
     url = "https://api.botcahx.eu.org/api/ephoto/horor"
     params = {
         "text": text,
-        "apikey": "VENOZY"
+        "apikey": "Biyy"
     }   
     try:
         response = requests.get(url, params=params)
@@ -79,7 +79,7 @@ def robottt(text):
 async def _(client, message):
     args = message.text.split(" ", 1)
     if len(args) < 2:
-        await message.reply_text("contoh : .hororrr peno")
+        await message.reply_text("contoh : .hororrr Boysz")
         return
 
     request_text = args[1]
@@ -113,7 +113,7 @@ async def _(client, message):
 async def _(client, message):
     args = message.text.split(" ", 1)
     if len(args) < 2:
-        await message.reply_text("contoh : .coverpubg peno")
+        await message.reply_text("contoh : .coverpubg Boysz")
         return
 
     request_text = args[1]
@@ -147,7 +147,7 @@ async def _(client, message):
 async def _(client, message):
     args = message.text.split(" ", 1)
     if len(args) < 2:
-        await message.reply_text("contoh : .blackpink peno")
+        await message.reply_text("contoh : .blackpink Boysz")
         return
 
     request_text = args[1]
@@ -180,7 +180,7 @@ async def _(client, message):
 async def _(client, message):
     args = message.text.split(" ", 1)
     if len(args) < 2:
-        await message.reply_text("contoh : .blackpink peno")
+        await message.reply_text("contoh : .blackpink Boysz")
         return
 
     request_text = args[1]
@@ -213,7 +213,7 @@ async def _(client, message):
 async def _(client, message):
     args = message.text.split(" ", 1)
     if len(args) < 2:
-        await message.reply_text("contoh : .television peno")
+        await message.reply_text("contoh : .television Boysz")
         return
 
     request_text = args[1]
@@ -247,7 +247,7 @@ async def _(client, message):
 async def _(client, message):
     args = message.text.split(" ", 1)
     if len(args) < 2:
-        await message.reply_text("contoh : .gllaases peno")
+        await message.reply_text("contoh : .gllaases Boysz")
         return
 
     request_text = args[1]

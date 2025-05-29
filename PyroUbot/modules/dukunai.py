@@ -21,7 +21,7 @@ async def chat_gpt(client, message):
 
         if len(message.command) < 2:
             await message.reply_text(
-                "<emoji id=5019523782004441717>❌</emoji>mohon gunakan format\ncontoh : .dukunai namaku alfsefyy"
+                "<emoji id=5019523782004441717>❌</emoji>mohon gunakan format\ncontoh : .dukunai namaku boysz"
             )
         else:
             prs = await message.reply_text(f"<emoji id=5192886773948107844>😮‍💨</emoji>Mbah Dukun Sedang Meramal....")

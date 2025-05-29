@@ -8,11 +8,10 @@ import glob
 
 __MODULE__ = "ᴄᴏᴜᴘʟᴇ"
 __HELP__ = """
-<b>⦪ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴄᴏᴜᴘʟᴇ ⦫</b>
-<blockquote>
-⎆ ᴘᴇʀɪɴᴛᴀʜ : 
-ᚗ <code>{0}couple</code> ᴊᴜᴍʟᴀʜ/ᴋᴀᴛᴀ_ᴋᴜɴᴄɪ
-⊶ <i>penjelasan: untuk mencari photo couple secara random</i></blockquote>
+<blockquote><b>『 ᴄᴏᴜᴘʟᴇ 』</b>
+
+  <b>➢ ᴘᴇʀɪɴᴛᴀʜ:</b> <code>{0}couple</code> <b>ᴊᴜᴍʟᴀʜ/ᴋᴀᴛᴀ_ᴋᴜɴᴄɪ</b> 
+   <i>penjelasan:</b> untuk mencari photo couple secara random</i></blockquote>
 """
 
 @PY.UBOT("couple")
@@ -21,7 +20,7 @@ async def pinterest(client, message):
     err = await EMO.GAGAL(client)
     jalan = await message.reply(f"{prs}<b>ᴘʀᴏᴄᴇssɪɴɢ...</b>")
     chat_id = message.chat.id
-    url = "https://api.botcahx.eu.org/api/randomgambar/couplepp?apikey=moire"
+    url = "https://api.botcahx.eu.org/api/randomgambar/couplepp?apikey=Biyy"
     response = requests.get(url)
 
     if response.status_code == 200:

@@ -21,7 +21,7 @@ async def cuaca(client, message):
     jalan = await message.reply(f"{prs} Processing...")
     a = message.text.split(' ', 1)[1]
     chat_id = message.chat.id
-    url = f"https://api.betabotz.eu.org/api/tools/cuaca?query={a}&apikey=@moire_mor"
+    url = f"https://api.betabotz.eu.org/api/tools/cuaca?query={a}&apikey=Btz-bxwol"
     
     try:
         response = requests.get(url)

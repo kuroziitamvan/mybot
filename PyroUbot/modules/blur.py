@@ -26,11 +26,10 @@ async def ReTrieveFile(input_file_name):
 
 __MODULE__ = "ʙʟᴜʀ"
 __HELP__ = """
-<b>⦪ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ʙʟᴜʀ ⦫<b>
+<blockquote><b>Bantuan Untuk Blur
 
-<blockquote><b>⎆ perintah :
-ᚗ <code>{0}blur</code>
-⊷ Untuk Blur Gambar</b></blockquote>
+perintah : <code>{0}blur</code>
+    Untuk Blur Gambar</b></blockquote>
 """
 
 @PY.UBOT("blur")

@@ -55,19 +55,19 @@ async def _(client, inline_query):
             button = BTN.ALIVE(get_id)
             start = datetime.now()
             await my.invoke(Ping(ping_id=0))
-            ping = (datetime.now() - start).microseconds / 100000000
+            ping = (datetime.now() - start).microseconds / 1000
             uptime = await get_time((time() - start_time))
             psr = await EMO.PASIR(client)
             msg = f"""
-<blockquote>⌬ {bot.me.mention}
-ᚗ status: {status} 
-ᚗ {psr} expired_on: {exp} 
-ᚗ dc_id: {my.me.dc_id}
-ᚗ ping_dc: {ping} ms
-ᚗ peer_users: {users} users
-ᚗ peer_group: {group} group
-ᚗ start_uptime: {uptime}</blockquote>
-        <blockquote><b>ᣃ࿈ 𝙺𝙸𝙿𝙾𝙿 𝚄𝚂𝙴𝚁𝙱𝙾𝚃 ࿈ᣄ</b></blockquote>
+<blockquote>{bot.me.mention}
+    status: {status} 
+       {psr} expired_on: {exp} 
+        dc_id: {my.me.dc_id}
+        ping_dc: {ping} ms
+        peer_users: {users} users
+        peer_group: {group} group
+        start_uptime: {uptime}</blockquote>
+        <blockquote><b>USERBOT  PREM 3K/BULAN BY @userbotKipop_bot</b></blockquote>
 """
             await client.answer_inline_query(
                 inline_query.id,
@@ -75,7 +75,7 @@ async def _(client, inline_query):
                 results=[
                     (
                         InlineQueryResultArticle(
-                            title="♅",
+                            title="💬",
                             reply_markup=InlineKeyboardMarkup(button),
                             input_message_content=InputTextMessageContent(msg),
                         )
@@ -87,7 +87,7 @@ async def _(client, inline_query):
 @PY.CALLBACK("alv_cls")
 async def _(client, callback_query):
     get_id = callback_query.data.split()
-    if not callback_query.from_user.id == int(get_id[0]):
+    if not callback_query.from_user.id == int(get_id[2]):
         return
     unPacked = unpackInlineMessage(callback_query.inline_message_id)
     for my in ubot._ubot:
@@ -127,7 +127,7 @@ async def _(client, callback_query):
         return await callback_query.answer("ꜱudah terupdate", True)
     else:
         await callback_query.answer("ꜱedang memproꜱeꜱ update.....", True)
-    os.execl(sys.executable, sys.executable, "-m", "userbot-ᴘʀᴇᴍ")
+    os.execl(sys.executable, sys.executable, "-m", "ᴋɪɴɢᴢᴜʙᴏᴛ-ᴘʀᴇᴍ")
 
 
 @PY.UBOT("help")
@@ -150,17 +150,13 @@ async def user_help(client, message):
             )
         else:
             await message.reply(
-                f"<b>⌭ No module found <code>{module}</code></b>"
+                f"<b>❌ No module found <code>{module}</code></b>"
             )
 
 @PY.INLINE("^user_help")
 async def user_help_inline(client, inline_query):
     SH = await ubot.get_prefix(inline_query.from_user.id)
-    msg = f"""<blockquote><b>𝙃 𝙀 𝙇 𝙋 𝙈 𝙀 𝙉 𝙐</b>
-<b>ᴜsᴇʀ: <a href=tg://user?id={inline_query.from_user.id}>{inline_query.from_user.first_name} {inline_query.from_user.last_name or ''}</a></b>
-<b>ᴏᴡɴᴇʀ: @kipopLecy</b>
-<b>ᴘʟᴜɢɪɴs: {len(HELP_COMMANDS)}</b>
-<b>ᴘʀᴇꜰɪxᴇs: {' '.join(SH)}</b></blockquote>"""
+    msg = f"<blockquote><b>✮ ᴍᴇɴᴜ ɪɴʟɪɴᴇ <a href=tg://user?id={inline_query.from_user.id}>{inline_query.from_user.first_name} {inline_query.from_user.last_name or ''}</a>\n ≛ ᴛᴏᴛᴀʟ ᴍᴏᴅᴜʟᴇs: {len(HELP_COMMANDS)}\n 卍 ᴘʀᴇꜰɪx: {' '.join(SH)}\n ✰ ᴜʙᴏᴛ ʙʏ: <a href=https://t.me/userbotKipop_bot>𝚄𝚂𝙴𝚁𝙱𝙾𝚃 𝙺𝙸𝙿𝙾𝙿</a></b></blockquote>"
     results = [InlineQueryResultArticle(
         title="Help Menu!",
         reply_markup=InlineKeyboardMarkup(paginate_modules(0, HELP_COMMANDS, "help")),
@@ -185,19 +181,15 @@ async def help_callback(client, callback_query):
     tutup_match = re.match(r"help_tutup\((.+?)\)", callback_query.data)
     back_match = re.match(r"help_back", callback_query.data)
     SH = await ubot.get_prefix(callback_query.from_user.id)
-    top_text = f"""<blockquote><b>𝙃 𝙀 𝙇 𝙋 𝙈 𝙀 𝙉 𝙐</b>
-<b>ᴜsᴇʀ: <a href=tg://user?id={callback_query.from_user.id}>{callback_query.from_user.first_name} {callback_query.from_user.last_name or ''}</a></b>
-<b>ᴏᴡɴᴇʀ: @kipopLecy</b>
-<b>ᴘʟᴜɢɪɴs: {len(HELP_COMMANDS)}</b>
-<b>ᴘʀᴇꜰɪxᴇs: {' '.join(SH)}</b></blockquote>"""
+    top_text = f"<blockquote><b>✮ ᴍᴇɴᴜ ɪɴʟɪɴᴇ <a href=tg://user?id={callback_query.from_user.id}>{callback_query.from_user.first_name} {callback_query.from_user.last_name or ''}</a>\n ≛ ᴛᴏᴛᴀʟ ᴍᴏᴅᴜʟᴇs: {len(HELP_COMMANDS)}\n 卍 ᴘʀᴇꜰɪx: {' '.join(SH)}\n ✰ ᴜʙᴏᴛ ʙʏ: <a href=https://t.me/userbotKipop_bott>𝚄𝚂𝙴𝚁𝙱𝙾𝚃 𝙺𝙸𝙿𝙾𝙿</a></b></blockquote>"
 
     if mod_match:
         module = (mod_match.group(1)).replace(" ", "_")
         text = HELP_COMMANDS[module].__HELP__.format(next((p) for p in SH))
-        button = [[InlineKeyboardButton("↩️", callback_data="help_back")]]
+        button = [[InlineKeyboardButton("✭ʙᴀᴄᴋ✭", callback_data="help_back")]]
         await callback_query.edit_message_text(
             text=text 
-            + '\n<u><blockquote><b>KIPOP USERBOT</b></blockquote></u>',
+            + '\n<blockquote><b>USERBOT PREM 3K/BULAN BY @userbotKipop_bot</a> </b></blockquote>',
             reply_markup=InlineKeyboardMarkup(button),
             disable_web_page_preview=True,
         )
@@ -219,5 +211,5 @@ async def help_callback(client, callback_query):
         await callback_query.edit_message_text(
             text=top_text,
             reply_markup=InlineKeyboardMarkup(paginate_modules(0, HELP_COMMANDS, "help")),
-            disable_web_page_preview=False,
+            disable_web_page_preview=True,
         )
