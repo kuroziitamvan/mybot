@@ -7,10 +7,10 @@ from PyroUbot import *
 
 __MODULE__ = "ʜᴇʀᴏ ᴍʟ"
 __HELP__ = """
-<b>⦪ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ʜᴇʀᴏ ᴍʟ ⦫</b>
-<blockquote><b>⎆ Perintah :
-ᚗ <code>{0}heroml</code> namahero
-⊶ Mengambil informasi Hero Mobile Legend.</b></blockquote>
+<b>✮ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ʜᴇʀᴏ ᴍʟ ✮</b>
+<blockquote><b> Perintah :
+<code>{0}heroml</code> namahero
+Mengambil informasi Hero Mobile Legend.</b></blockquote>
 """
 
 def get_hero_info(hero_name):
