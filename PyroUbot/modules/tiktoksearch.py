@@ -10,9 +10,9 @@ __HELP__ = """
    <i>penjelasan:</b> untuk mencari vt yang di perintahkan.</i></blockquote>
 """
 
-API_KEY = "@moire_mor"
+API_KEY = "Biyy"
 
-@PY.UBOT("tiktoksearch|tts|ttsearch")
+@PY.UBOT("tiktoksearch|ttsearch")
 async def tiktok_search(client, message):
     if len(message.command) < 2:
         return await message.reply("<blockquote><b>Gunakan: `.tiktoksearch query`</b></blockquote>")

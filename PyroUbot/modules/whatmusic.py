@@ -8,13 +8,13 @@ from PyroUbot import *
 
 __MODULE__ = "ᴡʜᴀᴛ ᴍᴜsɪᴄ"
 __HELP__ = """
-<b>⦪ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴡʜᴀᴛ ᴍᴜsɪᴄ ⦫</b>
+<b>✮ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴡʜᴀᴛ ᴍᴜsɪᴄ ✮</b>
 <blockquote>
-⎆ perintah :
-ᚗ <code>{0}whatmusic</code> Reply video atau music
+perintah :
+<code>{0}whatmusic</code> Reply video atau music
 
-⎆ ᴘᴇɴᴊᴇʟᴀsᴀɴ:
-⊶ Mendeteksi sebuah musik.
+ᴘᴇɴᴊᴇʟᴀsᴀɴ:
+Mendeteksi sebuah musik.
 </blockquote>
 """
 
@@ -58,7 +58,7 @@ async def whatmusic_handler(client, message: Message):
     
     await msg.edit("🎵 Menganalisis musik dalam video...")
     
-    response = requests.get(f"https://api.botcax.eu.org/api/tools/whatmusic?url={video_url}&apikey=moire")
+    response = requests.get(f"https://api.botcax.eu.org/api/tools/whatmusic?url={video_url}&apikey=Biyy")
     if response.status_code == 200:
         try:
             data = response.json()

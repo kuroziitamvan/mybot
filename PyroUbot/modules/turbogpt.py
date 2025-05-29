@@ -26,7 +26,7 @@ async def chat_gpt(client, message):
         else:
             prs = await message.reply_text(f"<emoji id=6226405134004389590>🔍</emoji>Turbo Sedang Menjawab Pesan Anda....")
             hai = message.text.split(' ', 1)[1]
-            response = requests.get(f'https://api.luxz-store.biz.id/api/ai/gpt-3-5-turbo?text={hai}')
+            response = requests.get(f'https://vapis.my.id/api/turbov1?q={hai}')
 
             try:
                 if "result" in response.json():

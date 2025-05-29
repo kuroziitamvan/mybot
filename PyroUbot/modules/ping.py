@@ -17,10 +17,10 @@ from PyroUbot import *
 @PY.TOP_CMD
 async def _(client, message):
     start = datetime.now()
-    await client.invoke(Ping(ping_id=1))
+    await client.invoke(Ping(ping_id=0))
     end = datetime.now()
     uptime = await get_time((time() - start_time))
-    delta_ping_formatted = round((end - start).microseconds / 100000000, 0)
+    delta_ping_formatted = round((end - start).microseconds / 10000, 2)
     pong = await EMO.PING(client)
     tion = await EMO.MENTION(client)
     yubot = await EMO.UBOT(client)
@@ -34,20 +34,22 @@ async def _(client, message):
 <blockquote>{pong} {pantek} : {str(delta_ping_formatted).replace('.', ',')} ms
 {tion} {ngentod} : <code>{client.me.mention}</code>
 {yubot} {kontol} : <code>{bot.me.mention}</code></blockquote>
-"""
+
+<blockquote><b>USERBOT 3K/BULAN BY @userbotKipop_bot</b></blockquote>"""
         await message.reply(_ping)
     else:
         _ping = f"""
 <blockquote>{pantek} : {str(delta_ping_formatted).replace('.', ',')} ms
 {ngentod} : <code>{client.me.mention}</code>
 {kontol} : <code>{bot.me.mention}</code></blockquote>
-"""
+
+<blockquote><b>USERBOT 3K/BULAN BY @userbotKipop_bot</b></blockquote>"""
         await message.reply(_ping)
 
 @PY.INDRI("1ping")
 async def _(client, message):
     command = message.text.split()
-    if len(command) < 1:
+    if len(command) < 2:
         return
     
     haku = command[1].replace("@", "")
@@ -55,22 +57,24 @@ async def _(client, message):
     if client.me.username != haku:
         return
     start = datetime.now()
-    await client.invoke(Ping(ping_id=1))
+    await client.invoke(Ping(ping_id=0))
     end = datetime.now()
     uptime = await get_time((time() - start_time))
-    delta_ping_formatted = round((end - start).microseconds / 100000000, 0)
+    delta_ping_formatted = round((end - start).microseconds / 10000, 2)
     pong = await EMO.PING(client)
     tion = await EMO.MENTION(client)
     yubot = await EMO.UBOT(client)
     babi = client.me.is_premium
     if babi:
         _ping = f"""
-<blockquote>{pong}𝙿𝙾𝙽𝙶 : {str(delta_ping_formatted).replace('.', ',')} ms
-{tion}𝙿𝙴𝙽𝙶𝙶𝚄𝙽𝙰 : {client.me.mention}
-{yubot}𝚄𝙱𝙾𝚃 : {bot.me.mention}</blockquote>
+<blockquote>{pong}pong : {str(delta_ping_formatted).replace('.', ',')} ms
+{tion}owner : {client.me.mention}
+{yubot}ubot : {bot.me.mention}</blockquote>
+
+<blockquote><b>USERBOT 3K/BULAN BY @userbotKipop_bot</b></blockquote>
     """
         await message.reply(_ping)
     else:
-        await message.reply(f"<blockquote>pong : {str(delta_ping_formatted).replace('.', ',')} ms</blockquote>\n\n<blockquote><b>kipop userbot</b></blockquote>")
+        await message.reply(f"<blockquote>pong : {str(delta_ping_formatted).replace('.', ',')} ms</blockquote>\n\n<blockquote><b>USERBOT 5K/BULAN BY @userbotKipop_bot</b></blockquote>")
 
 

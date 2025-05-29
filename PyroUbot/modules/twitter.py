@@ -5,15 +5,15 @@ from PyroUbot import *
 
 __MODULE__ = "ᴛᴡɪᴛᴛᴇʀ"
 __HELP__ = """
-<b>⦪ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴛᴡɪᴛᴛᴇʀ ⦫</b>
+<b>✮ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴛᴡɪᴛᴛᴇʀ ✮</b>
 <blockquote><b>
-⎆ Perintah :
-ᚗ <code>{0}twit</code> link video twitter
-⊶ Mendownload Music Yang Di Inginkan.</b></blockquote>
+Perintah :
+<code>{0}twit</code> [link video twitter]
+Mendownload Music Yang Di Inginkan.</b></blockquote>
 """
 
 async def get_twitter_video(url):
-    api_url = f"https://api.botcahx.eu.org/api/dowloader/twitter?url={url}&apikey=@moire_mor"
+    api_url = f"https://api.botcahx.eu.org/api/dowloader/twitter?url={url}&apikey=Boyy"
     response = requests.get(api_url)
     
     if response.status_code == 200:
@@ -28,16 +28,16 @@ async def get_twitter_video(url):
 @PY.UBOT("twit")
 async def twitter_download(client, message):
     if len(message.command) < 2:
-        await message.reply_text("Gunakan format: /twitter <link_twitter>")
+        await message.reply_text("<blockquote><b>Gunakan format: .twitter <link_twitter></b></blockquote>")
         return
 
     twitter_url = message.command[1]
-    msg = await message.reply_text("Mengambil video, harap tunggu...")
+    msg = await message.reply_text("<blockquote><b>Mengambil video, harap tunggu...</b></blockquote>")
 
     video_url = await get_twitter_video(twitter_url)
 
     if video_url:
-        await msg.edit("Mengirim video...")
-        await message.reply_video(video_url, caption="Berikut video yang Anda minta.")
+        await msg.edit("<blockquote><b>Mengirim video...</b></blockquote>")
+        await message.reply_video(video_url, caption="<blockquote><b>Berikut video yang Anda Minta Kingz.</b></blockquote>")
     else:
-        await msg.edit("Gagal mengambil video. Pastikan link benar atau coba lagi nanti.")
+        await msg.edit("<blockquote><b><emoji id=5215204871422093648>❌</emoji>Gagal mengambil video. Pastikan link benar atau coba lagi nanti.</b></blockquote>")

@@ -3,16 +3,16 @@ import requests
 from PyroUbot import *
 
 # Masukkan API Key Anda di sini
-API_KEY = "@moire_mor"  # Ganti dengan API key yang benar
+API_KEY = "Biyy"  # Ganti dengan API key yang benar
 
 __MODULE__ = "ᴛᴇxᴛᴘʀᴏ𝟸"
 __HELP__ = """
-📚 <b>TextPro2 Commands</b>
+<b>TextPro2 Commands</b>
 
-<blockquote><b>🚦 Perintah : <code>eraser</code>
-🦠 Penjelasan : Membuat gambar dengan efek Eraser.</b></blockquote>
-<blockquote><b>🚦 Perintah : <code>papercut</code>
-🦠 Penjelasan : Membuat gambar dengan efek Paper Cut.</b></blockquote>
+<blockquote><b>Perintah : <code>eraser</code>
+Penjelasan : Membuat gambar dengan efek Eraser.</b></blockquote>
+<blockquote><b>Perintah : <code>papercut</code>
+Penjelasan : Membuat gambar dengan efek Paper Cut.</b></blockquote>
 """
 
 def fetch_image(api_url, text):

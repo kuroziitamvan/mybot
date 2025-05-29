@@ -8,13 +8,13 @@ from PyroUbot import *
 
 __MODULE__ = "ϙᴜᴏᴛᴇs ᴠɪᴅᴇᴏ"
 __HELP__ = """
-<b>⦪ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ϙᴜᴏᴛᴇs ᴠɪᴅᴇᴏ ⦫</b>
+<b>✮ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ϙᴜᴏᴛᴇs ᴠɪᴅᴇᴏ ✮</b>
 <blockquote>
-⎆ perintah :
-ᚗ <code>{0}qvideo</code> Link
+perintah :
+<code>{0}qvideo</code> Link
 
-⎆ ᴘᴇɴᴊᴇʟᴀsᴀɴ:
-⊶ Membuat Quotes video seperti tiktok.
+ᴘᴇɴᴊᴇʟᴀsᴀɴ:
+Membuat Quotes video seperti tiktok.
 </blockquote>
 """
 
@@ -47,7 +47,7 @@ async def quotesvideo_handler(client, message: Message):
 
     query = " ".join(message.command[1:])
     if not query:
-        return await message.reply("Silakan masukkan teks untuk quotes video.\nContoh: `/qvideo Makan Ayam`")
+        return await message.reply("Silakan masukkan teks untuk quotes video.\nContoh: `/qvideo Makan Babi`")
 
     msg = await message.reply("🔄 Mengunggah video...")
     video_url = await upload_media(message)
@@ -57,7 +57,7 @@ async def quotesvideo_handler(client, message: Message):
 
     await msg.edit("🎥 Membuat Quotes Video...")
     
-    api_url = f"https://api.botcahx.eu.org/api/maker/quotesvideo?url={video_url}&text={query}&apikey=@moire_mor"
+    api_url = f"https://api.botcahx.eu.org/api/maker/quotesvideo?url={video_url}&text={query}&apikey=Biyy"
     res = requests.get(api_url)
 
     if res.status_code == 200:

@@ -28,7 +28,7 @@ __HELP__ = """
 <blockquote><b>Bantuan Untuk Remove BG
 
 perintah : <code>{0}rmbg</code> [replay gambarnya]
-    Untuk Menghapus Latar Belakang Gambarr</blockquote></b>
+    Untuk Menghapus Latar Belakang Gambar</blockquote></b>
 
 """
 

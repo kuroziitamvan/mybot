@@ -1,12 +1,10 @@
+# updates by @hiyaok on telegram
 from datetime import datetime, timedelta
-
 from dateutil.relativedelta import relativedelta
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from pytz import timezone
 from PyroUbot.config import OWNER_ID
 from PyroUbot import *
-
-
 
 @PY.UBOT("prem")
 async def _(client, message):
@@ -26,7 +24,7 @@ async def _(client, message):
     if not get_bulan:
         get_bulan = 1
 
-    prem_users = await get_list_from_vars(bot.me.id, "SELER_USERS")
+    prem_users = await get_list_from_vars(bot.me.id, "PREM_USERS")
 
     if user.id in prem_users:
         return await msg.edit(f"""
@@ -47,6 +45,12 @@ async def _(client, message):
 <b>ɪᴅ: `{user.id}`</b>
 <b>ᴇxᴘɪʀᴇᴅ: {get_bulan} ʙᴜʟᴀɴ</b>
 <b>ꜱɪʟᴀʜᴋᴀɴ ʙᴜᴋᴀ @{bot.me.username} ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴜᴀᴛ ᴜꜱᴇʀʙᴏᴛ</b></blockquote>
+
+<blockquote>✮ᴄᴀʀᴀ ʙᴜᴀᴛ ᴜsᴇʀʙᴏᴛ :
+- sɪʟᴀʜᴋᴀɴ /start ᴅᴜʟᴜ ʙᴏᴛ @userbotKipop_bot
+- ᴋᴀʟᴀᴜ sᴜᴅᴀʜ sᴛᴀʀᴛ ʙᴏᴛ ᴀʙɪsᴛᴜ ᴘᴇɴᴄᴇᴛ ᴛᴏᴍʙᴏʟ ʙᴜᴀᴛ ᴜsᴇʀʙᴏᴛ 
+- ɴᴀʜ ɴᴀɴᴛɪ ᴀᴅᴀ ᴀʀᴀʜᴀɴ ᴅᴀʀɪ ʙᴏᴛ ɴʏᴀ ɪᴛᴜ ɪᴋᴜᴛɪɴ</blockquote>
+<blockquote><b>ɴᴏᴛᴇ : ᴊᴀɴɢᴀɴ ʟᴜᴘᴀ ʙᴀᴄᴀ ᴀʀᴀʜᴀɴ ᴅᴀʀɪ ʙᴏᴛ ɴʏᴀ</b></blockquote>
 """
         )
         return await bot.send_message(
@@ -148,7 +152,7 @@ async def _(client, message):
     except Exception as error:
         return await msg.edit(error)
 
-    sudo_users = await get_list_from_vars(bot.me.id, "ADMIN_USERS")
+    sudo_users = await get_list_from_vars(bot.me.id, "SELER_USERS")
 
     if user.id in sudo_users:
         return await msg.edit(f"""
@@ -264,11 +268,10 @@ async def _(client, message):
     now = datetime.now(timezone("Asia/Jakarta"))
     expire_date = now + timedelta(days=int(get_day))
     await set_expired_date(user_id, expire_date)
-    await Tm.edit(f"""
-💬 INFORMATION
+    await Tm.edit(f"""<blockquote><b><emoji id=5215538577496090960>💬</emoji> INFORMATION
  name: {user.mention}
  id: {get_id}
- aktifkan_selama: {get_day} hari
+ aktifkan_selama: {get_day} hari</b></blockquote>
 """
     )
 

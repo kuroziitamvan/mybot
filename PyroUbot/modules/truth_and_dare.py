@@ -48,23 +48,23 @@ async def truth(client, message):
         pass
 
 
-__MODULE__ = "ᴛʀᴜᴛʜ & ᴅᴀʀᴇ"
+__MODULE__ = "ꜰᴜɴ"
 __HELP__ = """
-<b>⦪ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴛʀᴜᴛʜ & ᴅᴀʀᴇ ⦫</b>
+<blockquote><b>『 truth & dare 』</b>
 
-<blockquote><b>⎆ perintah :
-ᚗ <code>{0}dare</code>
-⊷ coba aja
-
-ᚗ <code>{0}truth</code>
-⊷ coba aja
-
-ᚗ <code>{0}apakah</code>
-⊷ coba aja
-
-ᚗ <code>{0}bagaimana</code>
-⊷ coba aja
-
-ᚗ <code>{0}kenapa</code>
-⊷ coba aja</b></blockquote>
+  <b>• perintah:</b> <code>dare
+  <b>• penjelasan:</b> coba aja
+  
+  <b>• perintah:</b> <code>truth
+  <b>• penjelasan:</b> coba aja
+  
+  <b>• perintah:</b> <code>apakah 
+  <b>• penjelasan:</b> coba aja
+  
+  <b>• perintah:</b> <code>bagaimana 
+  <b>• penjelasan:</b> coba aja
+  
+  <b>• perintah:</b> <code>kenapa
+  <b>• penjelasan:</b> coba aja</b></blockquote>
+ 
   """

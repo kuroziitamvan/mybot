@@ -4,18 +4,18 @@ import requests
 
 __MODULE__ = "sᴛᴀʙʟᴇᴅɪғғᴜsɪᴏɴ"
 __HELP__ = """
-<b>⦪ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ sᴛᴀʙʟᴇᴅɪғғᴜsɪᴏɴ ⦫</b>
+<b>✮ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ sᴛᴀʙʟᴇᴅɪғғᴜsɪᴏɴ ✮</b>
 <blockquote><b>
-⎆ Perintah :
-ᚗ <code>{0}sd</code> text
-⊶ Untuk Membuat Gambar Menggunakan Text.</b></blockquote>
+Perintah :
+<code>{0}sd</code> text
+Untuk Membuat Gambar Menggunakan Text.</b></blockquote>
 """
 
 def get_giraffe_image(text):
     url = "https://api.botcahx.eu.org/api/search/stablediffusion"
     params = {
         "text": text,
-        "apikey": f"moire"
+        "apikey": f"Biyy"
     }
     try:
         response = requests.get(url, params=params)

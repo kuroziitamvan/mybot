@@ -3,13 +3,12 @@ import filetype
 from io import BytesIO
 from PyroUbot import *
 
-MODULE = "ᴛᴏᴜʀʟ"
-HELP = """
-<b>⦪ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴛᴏᴜʀʟ ⦫</b>
-<blockquote>
-⎆ perintah :
-ᚗ <code>{0}tourl</code> [reply media/text]
-⊶ mengapload media/text ke catbox.moe</blockquote>
+__MODULE__ = "ᴛᴏᴜʀʟ"
+__HELP__ = """
+<blockquote><b>Bantuan untuk tourl
+
+perintah : <code>{0}tourl</code> [reply media/text]
+    mengapload media/text ke Link</b></blockquote>
 """
 
 async def upload_file(buffer: BytesIO) -> str:
@@ -44,8 +43,24 @@ async def _(client, message):
             buffer = BytesIO(f.read())
             try:
                 media_url = await upload_file(buffer)
-                await message.reply(f"<b>berhasil diupload ke : <a href='{media_url}'>catbox.moe</a></b>")
+                await message.reply(f"<b>berhasil diupload ke : <a href='{media_url}'>LINK NYA KINGZ</a></b>")
             except Exception as e:
                 await message.reply(f"Error: {e}")
     else:
         await message.reply("Please reply to a media message to upload.")
+
+@PY.BOT("tourl|tg")
+async def _(client, message):
+    reply_message = message.reply_to_message
+    if reply_message and reply_message.media:
+        downloaded_file = await reply_message.download()
+        
+        with open(downloaded_file, 'rb') as f:
+            buffer = BytesIO(f.read())
+            try:
+                media_url = await upload_file(buffer)
+                await message.reply(f"<b>berhasil diupload ke : <a href='{media_url}'>LINK NYA KINGZ</a></b>")
+            except Exception as e:
+                await message.reply(f"Error: {e}")
+    else:
+        await message.reply("<blockquote><b>Please reply to a media message to upload.</b></blockquote>")

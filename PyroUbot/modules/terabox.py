@@ -18,7 +18,7 @@ async def terabox_handler(client, message):
         return
     
     url = message.command[1]
-    api_url = f"https://api.botcahx.eu.org/api/download/terabox?url={url}&apikey=Boyy"
+    api_url = f"https://api.botcahx.eu.org/api/download/terabox?url={url}&apikey=Biyy"
     response = requests.get(api_url)
     
     if response.status_code != 200:

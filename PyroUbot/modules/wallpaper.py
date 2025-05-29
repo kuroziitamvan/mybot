@@ -8,41 +8,41 @@ from io import BytesIO
 
 __MODULE__ = "ᴡᴀʟʟᴘᴀᴘᴇʀ"
 __HELP__ = """
-<b>⦪ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴡᴀʟʟᴘᴀᴘᴇʀ ⦫</b>
+<b>♛ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ ᴡᴀʟʟᴘᴀᴘᴇʀ ♛</b>
 
-<blockquote><b>⎆ perintah :
-ᚗ <code>{0}wall</code> [Query]
-⊷ ᴜɴᴛᴜᴋ ᴍᴇɴᴄᴀʀɪ ᴡᴀʟʟᴘᴀᴘᴇʀ/ɢᴀᴍʙᴀʀ
+<blockquote><b>perintah :
+<code>{0}wallpp</code> [Query]
+ᴜɴᴛᴜᴋ ᴍᴇɴᴄᴀʀɪ ᴡᴀʟʟᴘᴀᴘᴇʀ/ɢᴀᴍʙᴀʀ
 
-ᚗ Query
-   ⊷ ᴛᴇᴋɴᴏʟᴏɢɪ
-   ⊷ ᴀᴇsᴛʜᴇᴛɪᴄ
-   ⊷ ᴋᴀᴛᴀᴋᴀᴛᴀ   
-   ⊷ ʜᴇᴋᴇʀ   
-   ⊷ ᴛᴇᴋɴᴏʟᴏɢɪ
-   ⊷ ᴀɴᴊɪɴɢ     
-   ⊷ ʜᴘ 
-   ⊷ ɢᴀᴍᴇʀ 
-   ⊷ ᴘʀᴏɢᴀᴍɪɴɢ  
-   ⊷ ᴄʜᴜᴋʏ 
-   ⊷ ᴋᴜᴄɪɴɢ  
+✮ Query ✮
+   卍 ᴛᴇᴋɴᴏʟᴏɢɪ
+   卍 ᴀᴇsᴛʜᴇᴛɪᴄ
+   卍 ᴋᴀᴛᴀᴋᴀᴛᴀ   
+   卍 ʜᴇᴋᴇʀ   
+   卍 ᴛᴇᴋɴᴏʟᴏɢɪ
+   卍 ᴀɴᴊɪɴɢ     
+   卍 ʜᴘ 
+   卍 ɢᴀᴍᴇʀ 
+   卍 ᴘʀᴏɢᴀᴍɪɴɢ  
+   卍 ᴄʜᴜᴋʏ 
+   卍 ᴋᴜᴄɪɴɢ  
 """
 
 URLS = {
-    "teknologi": "https://api.botcahx.eu.org/api/wallpaper/teknologi?apikey=moire",
-    "aesthetic": "https://api.botcahx.eu.org/api/wallpaper/aesthetic?apikey=moire",
-    "katakata": "https://api.botcahx.eu.org/api/wallpaper/katakata?apikey=moire",
-    "heker": "https://api.botcahx.eu.org/api/wallpaper/hacker?apikey=moire",
-    "anjing": "https://api.botcahx.eu.org/api/wallpaper/anjing?apikey=moire",
-    "hp": "https://api.botcahx.eu.org/api/wallpaper/wallhp?apikey=moire",
-    "gamer": "https://api.botcahx.eu.org/api/wallpaper/gaming?apikey=moire",
-    "progaming": "https://api.botcahx.eu.org/api/wallpaper/programing?apikey=moire",
-    "chuky": "https://api.botcahx.eu.org/api/wallpaper/boneka-chucky?apikey=moire",
-    "kucing": "https://api.botcahx.eu.org/api/wallpaper/kucing?apikey=moire",
+    "teknologi": "https://api.botcahx.eu.org/api/wallpaper/teknologi?apikey=Biyy",
+    "aesthetic": "https://api.botcahx.eu.org/api/wallpaper/aesthetic?apikey=Biyy",
+    "katakata": "https://api.botcahx.eu.org/api/wallpaper/katakata?apikey=Biyy",
+    "heker": "https://api.botcahx.eu.org/api/wallpaper/hacker?apikey=Biyy",
+    "anjing": "https://api.botcahx.eu.org/api/wallpaper/anjing?apikey=Biyy",
+    "hp": "https://api.botcahx.eu.org/api/wallpaper/wallhp?apikey=Biyy",
+    "gamer": "https://api.botcahx.eu.org/api/wallpaper/gaming?apikey=Biyy",
+    "progaming": "https://api.botcahx.eu.org/api/wallpaper/programing?apikey=Biyy",
+    "chuky": "https://api.botcahx.eu.org/api/wallpaper/boneka-chucky?apikey=Biyy",
+    "kucing": "https://api.botcahx.eu.org/api/wallpaper/kucing?apikey=Biyy",
     }
 
 
-@PY.UBOT("wall")
+@PY.UBOT("wallpp")
 @PY.TOP_CMD
 async def _(client, message):
     # Extract query from message
@@ -50,10 +50,10 @@ async def _(client, message):
     
     if query not in URLS:
         valid_queries = ", ".join(URLS.keys())
-        await message.reply(f"Query tidak valid. Gunakan salah satu dari: {valid_queries}.")
+        await message.reply(f"<emoji id=5215204871422093648>❌</emoji> Query tidak valid. Gunakan salah satu dari: {valid_queries}.")
         return
 
-    processing_msg = await message.reply("Processing...")
+    processing_msg = await message.reply("<emoji id=4943239162758169437>🤩</emoji> Processing...")
     
     try:
         await client.send_chat_action(message.chat.id, ChatAction.UPLOAD_PHOTO)
@@ -66,4 +66,4 @@ async def _(client, message):
         await client.send_photo(message.chat.id, photo)
         await processing_msg.delete()
     except requests.exceptions.RequestException as e:
-        await processing_msg.edit_text(f"Gagal mengambil gambar anime Error: {e}")
+        await processing_msg.edit_text(f"<emoji id=5215204871422093648>❌</emoji> Gagal mengambil gambar anime Error: {e}")

@@ -5,7 +5,7 @@ from pyrogram.types import Message
 
 __MODULE__ = "sᴜʙғɪɴᴅᴇʀ"
 __HELP__ = """
-<blockquote><b>ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ sᴜʙғɪɴᴅᴇʀ
+<blockquote><b>✮ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ sᴜʙғɪɴᴅᴇʀ✮
 
  ᴘᴇʀɪɴᴛᴀʜ : <code>{0}subfin</code>
  ᴘᴇɴᴊᴇʟᴀsᴀɴ : ᴜɴᴛᴜᴋ ᴄᴇᴋ sᴜʙᴅᴏᴍᴀɪɴ ᴅᴀʀɪ ᴅᴏᴍᴀɪɴ ᴜᴛᴀᴍᴀ</b></blockquote>
@@ -50,5 +50,5 @@ async def subfinder(client, message):
     else:
         await message.reply("gagal mencari subdomain.")
 
-API_KEY = "jembot" 
+API_KEY = "Boyy" 
 API_URL = "https://api.botcahx.eu.org/api/tools/subdomain-finder"

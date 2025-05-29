@@ -6,8 +6,8 @@ __MODULE__ = "ꜱᴇᴛᴇᴍᴏ"
 __HELP__ = f"""
 <b>『 bantuan untuk setemo 』</b>
 
-  <b>• perintah:</b> <code>.setemo</code> [reply to user - text]
-  <b>• penjelasan:</b> untuk mengganti emoji status
+  <blockquote><b>• perintah:</b> <code>.setemo</code> [reply to user - text]
+  <b>• penjelasan:</b> untuk mengganti emoji status</b></blockquote>
 
 """
 

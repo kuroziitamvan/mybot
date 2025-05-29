@@ -8,17 +8,6 @@ from pyrogram import __version__
 from pyrogram.types import Message
 from PyroUbot import *
 
-__MODULE__ = "sʏsᴛᴇᴍ"
-__HELP__ = """
-<b>⦪ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ sʏsᴛᴇᴍ ⦫</b>
-<blockquote>
-⎆ perintah :
-ᚗ <code>{0}spc</code>
-
-⎆ ᴘᴇɴᴊᴇʟᴀsᴀɴ:
-⊶ Melihat statistik sistem.
-</blockquote>
-"""
 
 async def get_readable_time(seconds: int) -> str: 
     count = 0
@@ -54,6 +43,7 @@ def get_size(bytes, suffix="B"):
         bytes /= factor
 
 @PY.UBOT("spc")
+@PY.OWNER
 @PY.TOP_CMD
 async def psu(client: Client, message: Message):
     uname = platform.uname()

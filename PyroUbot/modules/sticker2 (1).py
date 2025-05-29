@@ -7,11 +7,11 @@ __HELP__ = """
 <blockquote><b>『 ᴀᴛᴛᴘ & ᴛᴛᴘ 』</b>
 
   <b>➢ ᴘᴇʀɪɴᴛᴀʜ:</b> 
-    ◉ <code>{0}attp</code> <i>teks</i> - Membuat stiker teks berwarna.
-    ◉ <code>{0}ttp</code> <i>teks</i> - Membuat stiker teks biasa.</blockquote>
+    ✮ <code>{0}attp</code> <i>teks</i> - Membuat stiker teks berwarna.
+    ✮ <code>{0}ttp</code> <i>teks</i> - Membuat stiker teks biasa.</blockquote>
 """
 
-API_KEY = "moire"
+API_KEY = "Biyy"
 
 @PY.UBOT("attp")
 async def attp(client, message):

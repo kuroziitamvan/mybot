@@ -5,11 +5,11 @@ from PyroUbot import *
 
 __MODULE__ = "sᴘᴏᴛɪғʏ"
 __HELP__ = """
-<b>⦪ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ sᴘᴏᴛɪғʏ ⦫</b>
+<b>✮ ʙᴀɴᴛᴜᴀɴ ᴜɴᴛᴜᴋ sᴘᴏᴛɪғʏ ✮</b>
 <blockquote><b>
-⎆ Perintah :
-ᚗ <code>{0}spotify</code> judul lagu
-⊶ Mendownload Music Yang Di Inginkan.</b></blockquote>
+Perintah :
+<code>{0}spotify</code> judul lagu
+Mendownload Music Yang Di Inginkan.</b></blockquote>
 """
 
 @PY.UBOT("spotify")
@@ -19,8 +19,8 @@ async def spotify_search(client, message):
         await message.reply_text("Gunakan format: /spotify <judul lagu>")
         return
     
-    proses_msg = await message.reply_text("🔎 Mencari lagu...")
-    search_url = f"https://api.botcahx.eu.org/api/search/spotify?query={query}&apikey=@moire_mor"
+    proses_msg = await message.reply_text("<emoji id=4967797089971995307>🔍</emoji> Mencari Music...")
+    search_url = f"https://api.botcahx.eu.org/api/search/spotify?query={query}&apikey=Biyy"
     search_response = requests.get(search_url).json()
     
     if not search_response["status"] or not search_response["result"]["status"]:
@@ -34,9 +34,9 @@ async def spotify_search(client, message):
     
     track_url = tracks[0]["url"]
     
-    await proses_msg.edit_text("👅 Mengunduh lagu...")
+    await proses_msg.edit_text("<emoji id=4943239162758169437>🤩</emoji> Mengunduh lagu...")
     
-    download_url = f"https://api.botcahx.eu.org/api/download/spotify?url={track_url}&apikey=@moire_mor"
+    download_url = f"https://api.botcahx.eu.org/api/download/spotify?url={track_url}&apikey=Biyy"
     download_response = requests.get(download_url).json()
     
     if not download_response["status"]:
@@ -69,7 +69,7 @@ async def spotify_search(client, message):
     caption = (f"🎵 <b>{track_title}</b>\n"
                f"👤 Artist: {artist_name}\n"
                f"⏳ Durasi: {track_duration}\n"
-               f"🔗 <a href='{spotify_url}'>Dengarkan di Spotify</a>")
+               f"🔗 <a href='{spotify_url}'>✮Dengarkan di Spotify✮</a>")
     
     await client.send_audio(
         chat_id=message.chat.id,
