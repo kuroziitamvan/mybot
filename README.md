@@ -3,7 +3,7 @@
 apt update && apt upgrade -y
 ```
 ```
-git clone https://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@github.com/SenxXtraz/mybot
+git clone https://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@github.com/SenxXtraz/mybot
 ```
 ```
 cd mybot && screen -S mybot
