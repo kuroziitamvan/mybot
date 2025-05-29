@@ -3,16 +3,16 @@
 apt update && apt upgrade -y
 ```
 ```
-git clone https://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@github.com/SenxXtraz/ubot
+git clone https://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@github.com/SenxXtraz/mybot
 ```
 ```
-cd ubot && screen -S ubot
+cd mybot && screen -S mybot
 ```
 ```
 bash installnode.sh && apt install python3.10-venv
 ```
 ```
-python3 -m venv ubot && source ubot/bin/activate
+python3 -m venv mybot && source mybot/bin/activate
 ```
 ```
 pip3 install -r requirements.txt
