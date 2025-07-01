@@ -17,7 +17,7 @@ async def _(client, message):
     user_id = message.from_user.id
     buttons = BTN.START(message)
     msg = MSG.START(message)
-    pantek = "https://files.catbox.moe/u5keuw.jpg"
+    pantek = "https://files.catbox.moe/o6c32m.jpg"
 
     await bot.send_photo(
         user_id, 
@@ -91,7 +91,7 @@ async def _(client, callback_query):
         waktu = exp.strftime("%d-%m-%Y") if exp else "None"
         return await callback_query.edit_message_text(
             f"""
-<blockquote> ᴜꜱᴇʀʙᴏᴛ ᴘʀᴇᴍɪᴜᴍ ʙʏ 𝚄𝚂𝙴𝚁𝙱𝙾𝚃 𝙺𝙸𝙿𝙾𝙿
+<blockquote> ᴜꜱᴇʀʙᴏᴛ ᴘʀᴇᴍɪᴜᴍ ʙʏ ᴅᴇᴡᴀ
    ꜱᴛᴀᴛᴜꜱ : ᴘʀᴇᴍɪᴜᴍ
    ᴘʀᴇꜰɪxᴇꜱ : {prefix[0]}
    ᴇxᴘɪʀᴇᴅ_ᴏɴ : {waktu}</b></blockquote>
@@ -320,9 +320,9 @@ async def _(client, callback_query):
     await bash("rm -rf *session*")
     await install_my_peer(new_client)
     try:
-        await new_client.join_chat("KipopUbotGB")
-        await new_client.join_chat("RoomPublicKipop")
-        await new_client.join_chat("testi_kipop")
+        await new_client.join_chat("gbseneng")
+        await new_client.join_chat("InfoUbotKazz")
+        await new_client.join_chat("KAZZHIGH")
     except UserAlreadyParticipant:
         pass
 
