@@ -18,7 +18,7 @@ python3 -m venv mybot && source mybot/bin/activate
 pip3 install -r requirements.txt
 ```
 ```
-cp sample.env .env && nano..env
+cp sample.env .env && nano .env
 ```
 ```
 screen -S mybot
